@@ -1,0 +1,82 @@
+# ==================== HBuilderX 编辑器缓存 ====================
+.idea/
+.hx/
+.hxproject/
+.hbuilderx/
+*.hx
+*.log.hx
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==================== uni-app 编译产物、打包缓存 ====================
+unpackage/
+dist/
+build/
+out/
+release/
+debug/
+ipa/
+apk/
+www/
+# 云打包、本地打包临时文件
+unpackage/resources/
+unpackage/dist/
+
+# ==================== 子小程序upx包、本地静态缓存 ====================
+*.upx
+static/cache/
+static/temp/
+temp/
+tmp/
+
+# ==================== 依赖包 ====================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ==================== 环境配置、隐私密钥 ====================
+.env
+.env.local
+.env.development
+.env.production
+secret.config.js
+private.key
+*.pem
+
+# ==================== 日志、报错文件 ====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================== 本地调试缓存、缓存数据 ====================
+.cache/
+.vscode/
+*.swp
+*.swo
+coverage/
+
+# ==================== 原生离线打包工程（Android/iOS） ====================
+platforms/
+android/
+ios/
+Pods/
+*.xcworkspace
+*.xcuserstate
+gradle/
+.gradle/
+build.gradle.local
+
+# ==================== uniCloud 本地缓存（不用云开发可保留） ====================
+uniCloud/localStorage/
+uniCloud/cache/
+
+# ==================== 系统杂项文件 ====================
+desktop.ini
