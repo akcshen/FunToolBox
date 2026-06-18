@@ -1,17 +1,70 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "趣用工具箱"
+			}
+		},
+		{
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "工具分类"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
 		}
-	}],
+	],
+	"subPackages": [
+		{
+			"root": "subPackages/demo-tool",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "工具演示"
+					}
+				}
+			]
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "趣用工具箱",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F7F8FA",
 		"app-plus": {
-			"background": "#efeff4"
+			"background": "#F7F8FA"
 		}
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#2979ff",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
+			},
+			{
+				"pagePath": "pages/category/index",
+				"text": "分类",
+				"iconPath": "static/tabbar/category.png",
+				"selectedIconPath": "static/tabbar/category-active.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine-active.png"
+			}
+		]
 	}
 }

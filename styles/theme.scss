@@ -1,0 +1,37 @@
+page,
+.theme-light {
+	--ftb-bg: #F7F8FA;
+	--ftb-card: #FFFFFF;
+	--ftb-text: #3A3A3A;
+	--ftb-text-secondary: #909399;
+	--ftb-border: #F0F0F0;
+	--ftb-primary: #2979ff;
+	--ftb-shadow: rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark {
+	--ftb-bg: #1A1A1A;
+	--ftb-card: #2C2C2C;
+	--ftb-text: #E5E5E5;
+	--ftb-text-secondary: #A0A0A0;
+	--ftb-border: #3A3A3A;
+	--ftb-primary: #4D9AFF;
+	--ftb-shadow: rgba(0, 0, 0, 0.3);
+}
+
+page {
+	background-color: var(--ftb-bg);
+	color: var(--ftb-text);
+}
+
+.ftb-card {
+	background-color: var(--ftb-card);
+	border-radius: 16rpx;
+	box-shadow: 0 4rpx 16rpx var(--ftb-shadow);
+}
+
+.ftb-page {
+	min-height: 100vh;
+	background-color: var(--ftb-bg);
+	box-sizing: border-box;
+}

@@ -16,8 +16,11 @@ app.$mount()
 // #ifdef VUE3
 import { createSSRApp } from 'vue'
 import App from './App.vue'
+import { openTool } from '@/utils/subpackage.js'
+
 export function createApp() {
   const app = createSSRApp(App)
+  app.config.globalProperties.$openTool = openTool
   return {
     app
   }
